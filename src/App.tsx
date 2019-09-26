@@ -1,11 +1,11 @@
 import React from 'react';
-import { MyForm } from './components/form';
+import { ContactUsForm } from './components/ContactUsForm';
 import './App.css';
 
 const App: React.FC = () => {
   return (
     <div className="mt-3">
-      {/* {to be added} */}
+      <ContactUsForm />
     </div>
   )
 }

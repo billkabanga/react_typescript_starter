@@ -1,7 +1,8 @@
 export interface FormProps {
-  username: string;
-  password: string;
   action: string;
+
+  // Prop to allow content to be injected
+  render: () => React.ReactNode
 }
 
 export interface Errors {

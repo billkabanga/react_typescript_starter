@@ -65,6 +65,7 @@ export class MyForm extends React.Component<FormProps, FormState> {
     return (
       <form onSubmit={this.handleSubmit} noValidate={true}>
         <div className="container">
+          {this.props.render()}
           <div className="form-group">
             <button type="submit" className="btn btn-primary" disabled={this.haveErrors(errors)}>Submit</button>
           </div>
