@@ -2,7 +2,7 @@ export interface FormProps {
   action: string;
 
   // Prop to allow content to be injected
-  render: () => React.ReactNode
+  render: () => React.ReactNode;
 }
 
 export interface Errors {
