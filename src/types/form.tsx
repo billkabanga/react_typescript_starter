@@ -5,13 +5,21 @@ export interface FormProps {
   render: () => React.ReactNode;
 }
 
+export interface Values {
+  [key: string]: any;
+}
+
 export interface Errors {
   [key: string]: string;
 }
 
 export interface FormState {
   submitted?: boolean;
-  username: string;
-  password: string;
+  values: Values;
   errors: Errors;
 }
+
+export interface FormContext extends FormState {
+  setValues: (values: Values) => void;
+}
+
